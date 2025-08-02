@@ -1,0 +1,235 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.section {
+  padding: 3rem 1rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+/* Header */
+header {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.hero__links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Centered Circle Icon Links */
+.icon-link {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  background-color: #f0f0f0;
+  border-color: #aaa;
+}
+
+/* Standardized SVG Icon */
+.icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  fill: #555;
+  pointer-events: none;
+  transition: fill 0.2s ease;
+}
+
+.icon-link:hover .icon {
+  fill: #000;
+}
+
+/* Resume Button */
+.resume-button {
+  padding: 0.6rem 1.2rem;
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.resume-button:hover {
+  background-color: #333;
+}
+
+/* Cards Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card Style */
+.card {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  padding: 1.5rem;
+  border-radius: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+
+.card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  border-color: #aaa;
+}
+
+/* Clickable Card Wrapper */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link:hover {
+  cursor: pointer;
+}
+
+/* Badge Cards */
+.badge-card {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.badge-card:hover {
+  transform: scale(1.02);
+}
+
+.badge-card figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge-card img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 0;
+}
+
+.badge-card figcaption {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* About */
+.about-card {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.about-card p {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .card-grid {
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .badge-card img {
+    max-width: 80px;
+  }
+}
