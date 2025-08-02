@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="topnav">
-      <div class="container nav-container">
-        <a href="#" class="logo">IRC Dev</a>
-        <ul class="nav-links">
+    <nav class="top-nav">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">Ivan Rei Castro</a>
+        <button class="nav-toggle" id="navToggle">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#certifications">Certifications</a></li>
@@ -18,6 +19,7 @@
         </ul>
       </div>
     </nav>
+
 
     <header>
       <div class="container" id="contact">
@@ -195,5 +197,14 @@
         <p>&copy; 2025 Ivan Rei Castro. All rights reserved.</p>
       </div>
     </footer>
+    <script>
+      const toggle = document.getElementById('navToggle');
+      const links = document.getElementById('navLinks');
+
+      toggle.addEventListener('click', () => {
+        links.classList.toggle('active');
+      });
+    </script>
+
   </body>
 </html>

@@ -197,28 +197,30 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Top Navigation */
-.topnav {
-  background-color: #fff;
+/* Top Nav */
+.top-nav {
+  background: #fff;
   border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
+  z-index: 1000;
   width: 100%;
-  z-index: 100;
 }
 
 .nav-container {
+  max-width: 960px;
+  margin: auto;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
 }
 
-.logo {
-  font-size: 1.5rem;
+.nav-logo {
   font-weight: bold;
-  text-decoration: none;
+  font-size: 1.2rem;
   color: #111;
+  text-decoration: none;
 }
 
 .nav-links {
@@ -230,7 +232,7 @@ html {
 .nav-links li a {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-size: 0.95rem;
   transition: color 0.2s ease;
 }
 
@@ -238,17 +240,38 @@ html {
   color: #000;
 }
 
-/* Mobile Responsive */
-@media (max-width: 600px) {
+/* Hamburger Menu */
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .nav-links {
-    gap: 1rem;
-    font-size: 0.9rem;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
   }
 
-  .logo {
-    font-size: 1.2rem;
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
   }
 }
+
 
 
 /* About */
