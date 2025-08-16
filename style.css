@@ -114,7 +114,7 @@ header p {
 main {
  background-color: #ffffff;
   opacity: 0.8;
-  background-image:  linear-gradient(#F5F5F5 1px, transparent 1px), linear-gradient(to right, #F5F5F5 1px, #ffffff 1px);
+  background-image:  linear-gradient(#e3e3e3 1px, transparent 1px), linear-gradient(to right, #e3e3e3 1px, #ffffff 1px);
   background-size: 20px 20px;
 }
 
