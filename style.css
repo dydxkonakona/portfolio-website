@@ -34,7 +34,7 @@ header {
   background: #f5f5f5;
   text-align: center;
   padding: 3rem 1rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #808080;
 }
 
 header h1 {
@@ -104,6 +104,14 @@ header p {
   background-color: #333;
 }
 
+/* main */
+main {
+ background-color: #ffffff;
+  opacity: 0.8;
+  background-image:  linear-gradient(#F5F5F5 1px, transparent 1px), linear-gradient(to right, #F5F5F5 1px, #ffffff 1px);
+  background-size: 20px 20px;
+}
+
 /* Cards Grid */
 .card-grid {
   display: grid;
@@ -114,7 +122,7 @@ header p {
 /* Card Style */
 .card {
   background-color: #fff;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #808080;
   padding: 1.5rem;
   border-radius: 0;
   height: 100%;
@@ -145,7 +153,7 @@ header p {
 .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
-  border-color: #aaa;
+  border-color: #000;
 }
 
 /* Clickable Card Wrapper */
@@ -201,11 +209,12 @@ html {
 /* Top Nav */
 .top-nav {
   background: #fff;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #808080;
   position: sticky;
   top: 0;
   z-index: 1000;
   width: 100%;
+  
 }
 
 .nav-container {
@@ -261,7 +270,7 @@ html {
     right: 0;
     background: #fff;
     padding: 1rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #808080;
   }
 
   .nav-links.active {
