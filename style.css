@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 /* Reset & Base */
 * {
   margin: 0;
@@ -6,7 +7,7 @@
 }
 
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   background-color: #fff;
   color: #222;
   line-height: 1.6;
@@ -200,7 +201,7 @@ html {
 /* Top Nav */
 .top-nav {
   background: #fff;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #000;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -292,8 +293,9 @@ footer {
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
+  background: #f5f5f5;
   color: #777;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #777;
 }
 
 /* Responsive */
