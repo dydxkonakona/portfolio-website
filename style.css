@@ -42,7 +42,7 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-header img {
+header .profile-pic {
   width: 250px;
   height: auto;
   border-radius: 50%;
