@@ -127,7 +127,7 @@ main {
 
 /* Card Style */
 .card {
-  background-color: #fff;
+  background-color: #f9f9f9;
   border: 1px solid #808080;
   padding: 1.5rem;
   border-radius: 0;
@@ -160,6 +160,7 @@ main {
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
   border-color: #000;
+  background-color: #fff;
 }
 
 /* Clickable Card Wrapper */
@@ -186,7 +187,8 @@ main {
 }
 
 .badge-card:hover {
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
+  transform: translateY(-6px);
 }
 
 .badge-card figure {
