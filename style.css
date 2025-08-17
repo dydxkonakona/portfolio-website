@@ -241,6 +241,11 @@ html {
   text-decoration: none;
 }
 
+.nav-logo img {
+  height: 30px;
+  vertical-align: middle;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
