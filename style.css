@@ -241,7 +241,7 @@ html {
   text-decoration: none;
 }
 
-.nav-logo img {
+.nav-logo .logo-icon {
   height: 30px;
   vertical-align: middle;
 }
